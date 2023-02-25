@@ -1,0 +1,16 @@
+<script>
+  $(document).ready(function () {
+    let kode_produk = $("#kode_produk").val();
+    $("#kode_produk").keydown(function (e) {
+      if (e.keyCode == 13) {
+        e.preventDefault();
+        if (kode_produk == "") {
+          alert("Kosong");
+        } else {
+        }
+      }
+    });
+  });
+
+  function CekProduk() {}
+</script>
