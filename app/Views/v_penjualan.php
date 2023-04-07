@@ -251,7 +251,7 @@
               <td style=" width:30px"><?= $value['nama_produk'] ?></td>
               <td style=" width:30px">Rp. <?= number_format($value['harga_jual'],0) ?></td>
               <td style=" width:30px"><?= $value['stok'] ?></td>
-              <td style=" width:30px"><button onclick="PilihProduk(<?= $value['kode_produk'] ?>)" class="btn btn-success btn-xs">Piih</button></td>
+              <td style=" width:30px"><button onclick="PilihProduk('<?= $value['kode_produk'] ?>')" class="btn btn-success btn-xs">Piih</button></td>
             </tr>
             <?php } ?>
           </tbody>

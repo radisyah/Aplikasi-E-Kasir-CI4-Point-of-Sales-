@@ -42,7 +42,7 @@ class Auth extends BaseController
       $password = $this->request->getPost('password');
       $cek = $this->ModelAuth->login($email);
       if ($cek) {
-        if(password_verify($password, $cek['password'])){
+        if($password=$cek['password']){
           // Jika datanya ditemukan
           session()->set('log',true);
           session()->set('id_user',$cek['id_user']);
